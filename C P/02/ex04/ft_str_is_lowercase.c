@@ -1,0 +1,28 @@
+#include <stdio.h>
+int    ft_str_is_lowercase(char *str)
+{
+    int index = 0;
+    int result = 0;
+ 
+        if(str[index] == '\0')
+    {
+        result = 1;
+        return(result);
+    }
+     while(str[index] != '\0')
+     {
+         if(str[index] >= 'a' && str[index] <= 'z')
+        {
+        //printf("%d: %c\n",index, str[index]);
+         result = 1;
+        }
+        else
+        {
+        result = 0;
+        break;
+        }
+
+        index++;
+    }
+    return(result);
+}

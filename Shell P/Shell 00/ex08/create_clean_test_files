@@ -1,0 +1,7 @@
+mkdir test
+mkdir test/test/
+
+touch "./test/#1#"
+touch "./test/.1~"
+touch "./test/test/1~"
+touch "./test/test/#a#"
